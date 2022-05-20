@@ -5,29 +5,36 @@ use GDO\Core\GDO_Module;
 use GDO\Language\Trans;
 
 /**
- * Combine a few bootstrap5 plugins into a usable gdo6 theme.
+ * Combine a few Bootstrap5 plugins into a usable GDOv7 Theme.
  * 
  * @author gizmore
- * @version 6.11.0
+ * @version 7.0.1
  * @since 6.10.4
  */
 final class Module_Bootstrap5Theme extends GDO_Module
 {
-    public $module_license = 'Apache2';
+    public string $license = 'Apache2';
     
-    public function getTheme() { return 'bootstrap5'; }
+    public function getTheme() : ?string { return 'bs5'; }
 
-    public function getDependencies()
+    public function getDependencies() : array
     {
         return [
-        	'FontAwesome',
             'Bootstrap5',
-        	'Moment',
-        	'JQueryAutocomplete',
+        	'Core',
         ];
     }
     
-    public function getModuleLicenseFilenames()
+    public function getFriendencies() : array
+    {
+    	return [
+        	'FontAwesome',
+        	'JQueryAutocomplete',
+        	'Moment',
+    	];
+    }
+    
+    public function getModuleLicenseFilenames() : array
     {
         return [
         	'bootstrap-datepicker/LICENSE',
@@ -38,7 +45,7 @@ final class Module_Bootstrap5Theme extends GDO_Module
     ##############
     ### Assets ###
     ##############
-    public function onIncludeScripts()
+    public function onIncludeScripts() : void
     {
         $this->addCSS('css/gdo6-bootstrap5.css');
         $this->addJS('js/gdo6-bootstrap5.js');
