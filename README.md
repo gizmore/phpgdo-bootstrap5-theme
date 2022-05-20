@@ -1,2 +1,2 @@
-# phpgdo-bootstrap5-theme
-GDOv7 Bootstrap5 Theme library module.
+# gdo6-bootstrap5-theme
+Bootstrap5 Theme for gdo6.
