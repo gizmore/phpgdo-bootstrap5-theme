@@ -8,7 +8,7 @@ $languages = Module_Language::instance()->cfgSupported();
 <div class="dropdown">
   <button class="btn btn-default dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     <?=GDO_Language::current()->renderCell()?>
-    <?=GDO_Language::current()->displayName()?>
+    <?=GDO_Language::current()->renderName()?>
     <span class="caret"></span>
   </button>
   <ul class="dropdown-menu">
@@ -22,9 +22,9 @@ $icon = <<<END
   onclick="GDO.Language.switch('{$language->getISO()}'); return false;">
   <img
    class="gdo-language {$sel}"
-   alt="{$language->displayName()}"
+   alt="{$language->renderName()}"
    src="{$root}GDO/Language/img/{$language->getID()}.png" />
-    {$language->displayName()}
+    {$language->renderName()}
  </a>
 </li>
 END;

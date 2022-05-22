@@ -8,7 +8,7 @@ use GDO\Language\Trans;
  * Combine a few Bootstrap5 plugins into a usable GDOv7 Theme.
  * 
  * @author gizmore
- * @version 7.0.1
+ * @version 7.0.0
  * @since 6.10.4
  */
 final class Module_Bootstrap5Theme extends GDO_Module

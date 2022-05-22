@@ -13,7 +13,7 @@ $filterVar = $field->filterVar();
   <a
    href="<?= $field->hrefTagFilter($tag); ?>"
    class="badge <?= $filterVar === $tag->getID() ? 'badge-primary' : 'badge-secondary'; ?>">
-    <span><?= $tag->displayName(); ?>(<?= $tag->getCount(); ?>)</span>
+    <span><?= $tag->renderName(); ?>(<?= $tag->getCount(); ?>)</span>
  </a>
 <?php endforeach; ?>
   <input type="hidden" name="f[<?= $field->name; ?>]" value="<?= html($filterVar); ?>" />

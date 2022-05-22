@@ -16,7 +16,7 @@ use GDO\File\GDT_File;
   />
 <?php endif; ?>
 <?php else : ?>
-  <span class="gdt-file-preview"><?=$file->displayName()?> <?=$file->displaySize()?></span>
+  <span class="gdt-file-preview"><?=$file->renderName()?> <?=$file->displaySize()?></span>
 <?php endif; ?>
   <?=$deleteButton?>
 </div>
