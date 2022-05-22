@@ -48,7 +48,7 @@ use GDO\Language\Trans;
                 <!-- Page content-->
                 <div id="content-wrap" class="container-fluid">
                     <?=$page->topBar()->renderHTML()?>
-                    <?=$page->renderGDT()?>
+                    <?=$page->html?>
                 </div>
             </div>
         </div>
