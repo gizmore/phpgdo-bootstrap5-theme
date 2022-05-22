@@ -17,4 +17,4 @@ $field->addClass('gdt-image-button');
 <?php endif; ?>
  <?=$field->htmlDisabled()?>
  <?=$field->htmlAttributes()?>
-  ><?=$field->htmlIcon()?> <?=$field->displayLabel()?></a>
+  ><?=$field->htmlIcon()?> <?=$field->renderLabel()?></a>

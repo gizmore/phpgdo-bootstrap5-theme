@@ -6,6 +6,6 @@ use GDO\Form\GDT_Submit;
  type="submit"
  class="btn btn-primary"
  name="<?=$field->formName()?>"
- value="<?=$field->displayLabel()?>"
+ value="<?=$field->renderLabel()?>"
  <?=$field->htmlAttributes()?>
  <?=$field->htmlDisabled()?> /></input>

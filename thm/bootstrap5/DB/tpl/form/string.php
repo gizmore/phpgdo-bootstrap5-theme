@@ -3,7 +3,7 @@
  class="mb-3 <?=$field->classError()?>">
   <label class="col-form-label col-auto" <?=$field->htmlForID()?>>
     <?= $field->htmlIcon(); ?>
-    <?= $field->displayLabel(); ?>
+    <?= $field->renderLabel(); ?>
   </label>
   <input
    <?=$field->htmlID()?>

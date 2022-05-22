@@ -13,7 +13,7 @@ use GDO\UI\GDT_Tabs;
    data-bs-toggle="tab"
    href="#<?=$anchor?>"
    role="presentation">
-    <?=$tab->displayLabel()?>
+    <?=$tab->renderLabel()?>
   </a>
 <?php $active = ''; ?>
 <?php endforeach; ?>

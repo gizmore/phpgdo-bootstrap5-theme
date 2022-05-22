@@ -4,7 +4,7 @@ use GDO\UI\GDT_DIV;
 /** @var $field \GDO\Maps\GDT_Position **/ ?>
 <div class="form-group <?=$field->classError()?>">
   <?=$field->htmlIcon()?>
-  <label class="form-label" <?=$field->htmlForID()?>><?= $field->displayLabel(); ?></label>
+  <label class="form-label" <?=$field->htmlForID()?>><?= $field->renderLabel(); ?></label>
   <input
    <?=$field->htmlID()?>
    type="text"

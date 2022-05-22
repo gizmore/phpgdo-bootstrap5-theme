@@ -1,7 +1,7 @@
 <?php /** @var $field \GDO\Form\GDT_Select **/ ?>
 <div class="form-group <?=$field->htmlClass()?>">
   <?=$field->htmlIcon()?>
-<?php if ($label = $field->displayLabel()) : ?>
+<?php if ($label = $field->renderLabel()) : ?>
   <label class="form-label"><?=$label?></label>
 <?php endif; ?>
   <select

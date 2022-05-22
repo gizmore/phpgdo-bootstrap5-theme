@@ -4,7 +4,7 @@ $field instanceof GDT_Object;
 ?>
 <md-input-container class="md-block md-float md-icon-left<?= $field->classError(); ?>" flex>
   <?= $field->htmlIcon(); ?>
-  <label class="form-label" <?=$field->htmlForID()?>><?= $field->displayLabel(); ?></label>
+  <label class="form-label" <?=$field->htmlForID()?>><?= $field->renderLabel(); ?></label>
   <input
    <?=$field->htmlID()?>
    type="number"

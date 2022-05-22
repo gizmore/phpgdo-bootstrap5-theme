@@ -5,7 +5,7 @@ use GDO\Mail\GDT_Email;
 <div class="mb-3 <?=$field->classError()?>">
   <label class="col-form-label col-auto" <?=$field->htmlForID()?>>
     <?=$field->htmlIcon()?>
-    <?=$field->displayLabel()?>
+    <?=$field->renderLabel()?>
   </label>
     <input
      class="col-auto form-control"

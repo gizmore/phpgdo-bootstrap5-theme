@@ -3,7 +3,7 @@
 ?>
 <div class="form-group <?=$field->classError()?>">
   <?=$field->htmlIcon()?>
-  <label class="form-label"><?= $field->displayLabel(); ?></label>
+  <label class="form-label"><?= $field->renderLabel(); ?></label>
   <input
    class="form-control"
    <?=$field->htmlFormName()?>

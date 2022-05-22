@@ -2,4 +2,4 @@
 	'btn-outline-danger',
 ];
 $field->addClass($classes[$field->priority]);?>
-<a href="<?=$href?>"<?=$field->htmlDisabled()?> <?=$field->htmlAttributes()?>><?=$field->htmlIcon()?> <?=$field->displayLabel()?></a>
+<a href="<?=$href?>"<?=$field->htmlDisabled()?> <?=$field->htmlAttributes()?>><?=$field->htmlIcon()?> <?=$field->renderLabel()?></a>

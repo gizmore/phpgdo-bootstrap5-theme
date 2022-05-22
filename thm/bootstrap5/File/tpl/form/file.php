@@ -26,7 +26,7 @@ use GDO\File\GDT_File;
 
 <div class="form-group gdo-flow-file <?=$field->classError()?>">
   <?=$field->htmlIcon()?>
-  <?=$field->displayLabel()?>
+  <?=$field->renderLabel()?>
 <?php if ($field->notNull) : ?>
  *
 <?php endif; ?>

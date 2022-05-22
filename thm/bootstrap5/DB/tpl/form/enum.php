@@ -6,7 +6,7 @@ $field instanceof GDT_Enum;
 <div class="mb-3 gdt-enum <?=$field->classError()?>">
   <label class="form-label" <?=$field->htmlForID()?>>
     <?=$field->htmlIcon()?>
-    <?= $field->displayLabel(); ?>
+    <?= $field->renderLabel(); ?>
   </label>
   <select
    class="form-control form-select"

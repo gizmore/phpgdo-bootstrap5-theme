@@ -4,4 +4,4 @@ use GDO\UI\GDT_Button;
 ?>
 <a class="gdt-button"
 <?$field->htmlDisabled()?>
-<?$field->htmlHREF()?>><?$field->htmlIcon()?><?$field->displayLabel()?></a>
+<?$field->htmlHREF()?>><?$field->htmlIcon()?><?$field->renderLabel()?></a>

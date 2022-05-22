@@ -14,7 +14,7 @@ $id = 'gwfac_'.$field->name;
   <?= $field->htmlIcon(); ?>
   <md-autocomplete
    md-clear-button="true"
-   md-floating-label="<?= $field->displayLabel(); ?>"
+   md-floating-label="<?= $field->renderLabel(); ?>"
    md-search-text="data.searchText"
    md-items="item in query(data.searchText)"
    md-item-text="item.text"

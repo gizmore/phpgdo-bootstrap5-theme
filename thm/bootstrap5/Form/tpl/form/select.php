@@ -1,7 +1,7 @@
 <?php /** @var $field \GDO\Form\GDT_Select **/ ?>
 <div class="form-group <?=$field->htmlClass()?>">
   <?=$field->htmlIcon()?>
-  <label class="form-label"><?= $field->displayLabel(); ?></label>
+  <label class="form-label"><?= $field->renderLabel(); ?></label>
   <select
    class="selectpicker form-select"
    data-width="100%"

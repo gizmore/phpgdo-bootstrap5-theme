@@ -6,7 +6,7 @@ use GDO\DB\GDT_Object;
  data-gdt-config='<?=$field->displayConfigJSON()?>'
  class="form-group gdo-autocomplete <?=$field->classError()?>">
   <?=$field->htmlIcon()?>
-  <label class="form-label" <?=$field->htmlForID()?>><?= $field->displayLabel(); ?></label>
+  <label class="form-label" <?=$field->htmlForID()?>><?= $field->renderLabel(); ?></label>
   <input
    <?=$field->htmlID()?>
    <?=$field->htmlAutocompleteOff()?>

@@ -1,7 +1,7 @@
 <?php /** @var $field \GDO\DB\GDT_Int **/ ?>
 <div class="form-group <?=$field->classError()?>">
   <?=$field->htmlIcon()?>
-  <label class="form-label" <?=$field->htmlForID()?>><?= $field->displayLabel(); ?></label>
+  <label class="form-label" <?=$field->htmlForID()?>><?= $field->renderLabel(); ?></label>
   <input
    <?=$field->htmlID()?>
    class="form-control"

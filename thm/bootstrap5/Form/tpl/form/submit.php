@@ -12,6 +12,6 @@ $field->addClass($classes[$field->priority]);
 <input
  type="submit"
  name="<?=$field->formName()?>"
- value="<?=$field->displayLabel()?>"
+ value="<?=$field->renderLabel()?>"
  <?=$field->htmlAttributes()?>
  <?=$field->htmlDisabled()?> /></input>

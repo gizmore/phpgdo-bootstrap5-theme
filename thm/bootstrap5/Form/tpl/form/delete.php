@@ -4,5 +4,5 @@
  onclick="return confirm('<?=t('confirm_delete')?>')"
  class="btn btn-secondary"
  <?=$field->htmlFormName()?>
- value="<?=$field->displayLabel()?>"
+ value="<?=$field->renderLabel()?>"
  <?=$field->htmlDisabled()?> /></input>

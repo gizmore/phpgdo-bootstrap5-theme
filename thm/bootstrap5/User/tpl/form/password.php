@@ -1,7 +1,7 @@
 <?php /** @var $field \GDO\User\GDT_Password **/ ?>
 <div class="form-group <?=$field->classError()?>">
   <?= $field->htmlIcon(); ?>
-  <label class="form-label" for="form[<?= $field->name; ?>]"><?= $field->displayLabel(); ?></label>
+  <label class="form-label" for="form[<?= $field->name; ?>]"><?= $field->renderLabel(); ?></label>
   <input
    x=1
    type="password"

@@ -4,7 +4,7 @@ use GDO\Tag\GDT_Tags;
 ?>
 <div class="form-group <?=$field->classError()?>">
   <?=$field->htmlIcon()?>
-  <label <?=$field->htmlForID()?>><?= $field->displayLabel(); ?></label>
+  <label <?=$field->htmlForID()?>><?= $field->renderLabel(); ?></label>
   <input
    <?=$field->htmlID()?>
    class="form-control"

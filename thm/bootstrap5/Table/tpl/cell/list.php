@@ -35,11 +35,11 @@ if ($field->ordered)
         {
             if ($gdt->orderable)
             {
-                $link = GDT_Link::make()->labelRaw($gdt->displayLabel());
+                $link = GDT_Link::make()->labelRaw($gdt->renderLabel());
                 
                 if ($gdt->name === $ob)
                 {
-                    $menu->label('list_order', [$gdt->displayLabel(), t(strtolower(html($od)))]);
+                    $menu->label('list_order', [$gdt->renderLabel(), t(strtolower(html($od)))]);
                 }
                 $href = $field->replacedHREF("{$o}[order_by]", $gdt->name);
                 $href = $field->replacedHREF("{$o}[order_dir]", $gdt->orderDefaultAsc ? 'ASC' : 'DESC', $href);

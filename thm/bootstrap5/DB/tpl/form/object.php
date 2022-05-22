@@ -4,7 +4,7 @@
 <div
  class="form-group <?=$field->classError()?>">
   <?=$field->htmlIcon()?>
-  <label class="form-label" <?=$field->htmlForID()?>><?= $field->displayLabel(); ?></label>
+  <label class="form-label" <?=$field->htmlForID()?>><?= $field->renderLabel(); ?></label>
   <input
    <?=$field->htmlID()?>
    class="form-control"

@@ -6,7 +6,7 @@ $field instanceof GDT_SearchField;
 ?>
 <div class="form-group <?=$field->classError()?>">
   <?= $field->htmlIcon(); ?>
-  <label class="form-label" <?=$field->htmlForID()?>><?= $field->displayLabel(); ?></label>
+  <label class="form-label" <?=$field->htmlForID()?>><?= $field->renderLabel(); ?></label>
   <div class="input-group">
     <input
      <?=$field->htmlID()?>

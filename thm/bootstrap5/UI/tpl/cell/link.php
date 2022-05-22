@@ -9,7 +9,7 @@ $link->addClass('gdt-link')->addClass('nav-link');
 <?=$link->htmlHREF()?>>
   <?=$link->htmlIcon()?>
 <?php if ($link->hasLabel()) : ?>
-  <?=$link->displayLabel()?>
+  <?=$link->renderLabel()?>
 <?php else : ?>
   <?=html($link->href)?>
 <?php endif; ?>

@@ -6,7 +6,7 @@
    class="col-form-label"
    <?=$field->htmlForID()?>>
      <?= $field->htmlIcon(); ?>
-     <?= $field->displayLabel(); ?>
+     <?= $field->renderLabel(); ?>
    </label>
    <div 
     <?=$field->htmlID()?>

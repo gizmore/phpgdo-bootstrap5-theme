@@ -5,7 +5,7 @@ use GDO\UI\GDT_Color;
 <div class="form-group <?=$field->classError()?>">
   <?= $field->htmlIcon(); ?>
   <label class="form-label" <?=$field->htmlForID()?>>
-    <?=$field->displayLabel()?>
+    <?=$field->renderLabel()?>
   </label>
   <input
    <?=$field->htmlID()?>
