@@ -11,7 +11,7 @@ if ($users['users'])
 	foreach ($users['users'] as $user)
 	{
 		$uid = $user->getID();
-		$ausers[$uid] = GDT_Link::anchor(href('Profile', 'View', "&user=$uid"), $user->displayNameLabel());
+		$ausers[$uid] = GDT_Link::anchor(href('Profile', 'View', "&user=$uid"), $user->renderUserName());
 	}
 }
 $online = count($ausers);
