@@ -5,7 +5,7 @@ $fieldId = 'gdorangeslider_' . $field->name;
 $options = [];
 $options['ceil'] = $field->max;
 $options['floor'] = $field->min;
-$options['readOnly'] = !$field->writable;
+$options['readOnly'] = !$field->writeable;
 $options['disabled'] = $field->disabled;
 if ($field->maxRange > 0)
 {
