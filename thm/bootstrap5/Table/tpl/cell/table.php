@@ -11,7 +11,7 @@ if ($pagemenu = $field->getPageMenu())
 $result = $field->getResult();
 ?>
 <div
- id="gdt-table-<?=Application::instance()->getMethod()->gdoMethodId()?>-<?=$field->name?>"
+ id="gdt-table-<?=Application::$INSTANCE->getMethod()->gdoMethodId()?>-<?=$field->name?>"
  class="gdt-table table-responsive">
 <?php if (!$form) : ?>
 <form method="get" action="<?=html($field->action)?>" class="b">

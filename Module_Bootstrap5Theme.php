@@ -47,7 +47,7 @@ final class Module_Bootstrap5Theme extends GDO_Module
     ##############
     public function onIncludeScripts() : void
     {
-    	if (Application::instance()->hasTheme('bs5'))
+    	if (Application::$INSTANCE->hasTheme('bs5'))
     	{
 	        $this->addCSS('css/gdo6-bootstrap5.css');
 	        $this->addJS('js/gdo6-bootstrap5.js');
