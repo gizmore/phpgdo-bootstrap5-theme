@@ -56,6 +56,6 @@ elseif ($field->step > 0)
    <?=$field->htmlFormName()?>
    value='<?= $field->getVar(); ?>' />
 
-  <div class="gdo-form-error"><?= $field->error; ?></div>
+  <div class="gdt-form-error"><?= $field->error; ?></div>
 
 </md-input-container>
