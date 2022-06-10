@@ -1,6 +1,6 @@
 [submodule "bootstrap4-datetimepicker"]
 	path = bootstrap4-datetimepicker
-	url = ssh://git@github.com/gizmore/bootstrap4-datetimepicker
+	url = https://github.com/gizmore/bootstrap4-datetimepicker
 [submodule "bootstrap-datepicker"]
 	path = bootstrap-datepicker
 	url = https://github.com/uxsolutions/bootstrap-datepicker
