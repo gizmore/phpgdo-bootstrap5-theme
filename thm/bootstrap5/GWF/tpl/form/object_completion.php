@@ -1,5 +1,5 @@
 <?php
-use GDO\DB\GDT_Object;
+use GDO\Core\GDT_Object;
 $field instanceof GDT_Object;
 $id = 'gwfac_'.$field->name;
 ?>

@@ -1,5 +1,5 @@
 <?php
-use GDO\DB\GDT_Object;
+use GDO\Core\GDT_Object;
 /** @var $field GDT_Object **/
 ?>
 <div

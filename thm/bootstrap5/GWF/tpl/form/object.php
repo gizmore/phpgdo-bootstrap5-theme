@@ -1,5 +1,5 @@
 <?php
-use GDO\DB\GDT_Object;
+use GDO\Core\GDT_Object;
 $field instanceof GDT_Object;
 ?>
 <md-input-container class="md-block md-float md-icon-left<?= $field->classError(); ?>" flex>
