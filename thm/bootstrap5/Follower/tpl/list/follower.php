@@ -1,6 +1,6 @@
 <?php /** @var $follower GDO\Follower\GDO_Follower **/
 use GDO\User\GDO_User;
-use GDO\Profile\GDT_ProfileLink;
+use GDO\User\GDT_ProfileLink;
 use GDO\UI\GDT_Menu;
 use GDO\UI\GDT_Button;
 $user = $follower->getOther(GDO_User::current());
