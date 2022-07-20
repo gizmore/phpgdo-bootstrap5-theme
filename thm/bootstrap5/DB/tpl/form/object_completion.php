@@ -15,7 +15,7 @@ use GDO\Core\GDT_Object;
    <?=$field->htmlFormName()?>
    <?=$field->htmlDisabled()?>
    <?=$field->htmlRequired()?>
-   value="<?=$field->display()?>" />
+   value="<?=$field->renderVar()?>" />
   <input type="hidden" id="nocompletion_<?=$field->name?>" name="nocompletion_<?=$field->name?>" value="1" />
   <input type="hidden" id="completion-<?=$field->name?>" />
   <?=$field->htmlError()?>

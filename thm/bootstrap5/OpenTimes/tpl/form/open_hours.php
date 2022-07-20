@@ -19,7 +19,7 @@ $field instanceof GDT_OpenHours;
    ng-model="data.openHours.display"
    type="text"
    <?=$field->htmlFormName()?>
-   value="<?= $field->display(); ?>"
+   value="<?= $field->renderVar(); ?>"
    <?= $field->htmlRequired(); ?>
    <?= $field->htmlPattern(); ?>
    <?= $field->htmlDisabled(); ?> />

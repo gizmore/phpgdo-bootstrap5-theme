@@ -10,7 +10,7 @@ $field instanceof GDT_Object;
    type="number"
    step="1"
    <?=$field->htmlFormName()?>
-   value="<?= $field->display(); ?>"
+   value="<?= $field->renderVar(); ?>"
    <?= $field->htmlRequired(); ?>
    <?= $field->htmlDisabled(); ?>/>
   <div class="gdt-form-error"><?= $field->error; ?></div>

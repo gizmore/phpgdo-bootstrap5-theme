@@ -1,4 +1,4 @@
-<?php /** @var $field \GDO\DB\GDT_Int **/ ?>
+<?php /** @var $field \GDO\Core\GDT_Int **/ ?>
 <div class="form-group <?=$field->classError()?>">
   <?=$field->htmlIcon()?>
   <label class="form-label" <?=$field->htmlForID()?>><?= $field->renderLabel(); ?></label>
@@ -18,6 +18,6 @@
 <?php if ($field->step !== null) : ?>
    step="<?=$field->step?>"
 <?php endif; ?>
-   value="<?=$field->display()?>" />
+   value="<?=$field->renderVar()?>" />
   <?=$field->htmlError()?>
 </div>

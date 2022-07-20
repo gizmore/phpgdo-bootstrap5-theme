@@ -17,7 +17,7 @@
    class="form-control"
    <?=$field->htmlFormName()?>
    rows="6"
-   <?= $field->htmlDisabled(); ?>><?= $field->display(); ?></textarea>
+   <?= $field->htmlDisabled(); ?>><?= $field->renderVar(); ?></textarea>
    </div>
   <?=$field->htmlError()?>
 </div>

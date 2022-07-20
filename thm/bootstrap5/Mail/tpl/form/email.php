@@ -12,7 +12,7 @@ use GDO\Mail\GDT_Email;
      type="email"
      <?=$field->htmlID()?>
      <?=$field->htmlFormName()?>
-     value="<?= $field->display(); ?>"
+     value="<?= $field->renderVar(); ?>"
      <?= $field->htmlRequired(); ?>
      <?= $field->htmlDisabled(); ?> />
     <?= $field->htmlError(); ?>
