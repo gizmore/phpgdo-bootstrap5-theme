@@ -1,6 +1,6 @@
 <?php
-use GDO\Vote\GDT_VotePopup;
-use GDO\Vote\GDT_VoteSelection;
+use GDO\Votes\GDT_VotePopup;
+use GDO\Votes\GDT_VoteSelection;
 use GDO\UI\GDT_Icon;
 /** @var $field GDT_VotePopup **/
 $field instanceof GDT_VotePopup;
