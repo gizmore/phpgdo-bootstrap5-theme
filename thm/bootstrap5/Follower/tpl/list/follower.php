@@ -7,14 +7,14 @@ $user = $follower->getOther(GDO_User::current());
 $mode = $user === $follower->getUser() ? 1 : 2;
 ?>
 <md-list-item class="md-2-line" ng-click="null" href="<?= href('Profile', 'View', '&id='.$user->getID()); ?>">
-  <h3><?=GDT_ProfileLink::make()->withNickname()->forUser($user)->render()?></h3>
+  <h3><?=GDT_ProfileLink::make()->nickname()->forUser($user)->render()?></h3>
   <p>aaaa</p>
 <?php
 if ($mode === 2)
 {
-	echo GDT_Menu::make()->addFields(array(
+	echo GDT_Menu::make()->addFields(
 		GDT_Button::make('btn_unfollow')->href(href('Follower', 'Unfollow', "&id={$user->getID()}")),
-	))->render();
+	)->render();
 }
 ?>
 </md-list-item>

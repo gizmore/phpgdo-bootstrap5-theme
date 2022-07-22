@@ -13,7 +13,7 @@ use GDO\Form\GDT_Submit;
 ###################
 if ($field->searched)
 {
-    $formSearch = GDT_Form::make($field->headers->name)->slim()->methodGET();
+    $formSearch = GDT_Form::make($field->headers->name)->slim()->verb('GET');
     $formSearch->addField(GDT_SearchField::make('search'));
     $formSearch->actions()->addField(GDT_Submit::make()->css('display', 'none'));
     echo $formSearch->render();
