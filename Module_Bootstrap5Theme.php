@@ -34,7 +34,7 @@ final class Module_Bootstrap5Theme extends GDO_Module
     	];
     }
     
-    public function getModuleLicenseFilenames() : array
+    public function getLicenseFilenames() : array
     {
         return [
         	'bootstrap-datepicker/LICENSE',

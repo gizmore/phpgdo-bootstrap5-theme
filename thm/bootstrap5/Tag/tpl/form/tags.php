@@ -1,5 +1,5 @@
 <?php
-use GDO\Tag\GDT_Tags;
+use GDO\Tags\GDT_Tags;
 /** @var $field GDT_Tags **/
 ?>
 <div class="form-group <?=$field->classError()?>">

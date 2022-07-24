@@ -1,5 +1,5 @@
 <?php
-use GDO\Tag\GDT_TagCloud;
+use GDO\Tags\GDT_TagCloud;
 /** @var $field GDT_TagCloud **/
 $filterVar = $field->filterVar();
 ?>
