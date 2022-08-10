@@ -55,7 +55,7 @@ if ($field->ordered)
 ### List ###
 ############
 $pagemenu = $field->getPageMenu();
-$pagemenu = $pagemenu ? $pagemenu->renderCell() : '';
+$pagemenu = $pagemenu ? $pagemenu->renderHTML() : '';
 
 $result = $field->getResult();
 $template = $field->getItemTemplate();

@@ -52,7 +52,7 @@ use GDO\Language\Trans;
                 </div>
             </div>
         </div>
-        <footer><?=$page->bottomBar()->addClass('gdt-footer')->renderCell()?></footer>
+        <footer><?=$page->bottomBar()->addClass('gdt-footer')->renderHTML()?></footer>
 	    <?=GDT_Loading::make()->renderHTML()?>
 		<?=Javascript::displayJavascripts()?>
     </body>

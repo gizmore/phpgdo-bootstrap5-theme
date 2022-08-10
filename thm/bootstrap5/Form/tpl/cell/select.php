@@ -13,7 +13,7 @@
    name="<?=$field->name?>">
 	<?php foreach ($field->choices as $value => $choice) : ?>
 	  <?php $sel = $value == $field->var ? ' selected="selected"' : ''; ?>
-	  <option value="<?=htmlspecialchars($value)?>"<?=$sel?>><?= $field->renderChoice($choice); ?></option>
+	  <option value="<?=htmlspecialchars($value)?>"<?=$sel?>><?= $field->renderOption($choice); ?></option>
 	<?php endforeach; ?>
   </select>
 </div>

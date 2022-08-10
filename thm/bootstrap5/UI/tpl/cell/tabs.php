@@ -24,7 +24,7 @@ use GDO\UI\GDT_Tabs;
 <?php $anchor = sprintf('%s_%s', $field->name, $tab->name); ?>
   <div class="tab-pane fade <?=$active?>" id="<?=$anchor?>" role="tabpanel">
 <?php if ($cell) : ?>
-<?=$tab->renderCell()?>
+<?=$tab->renderHTML()?>
 <?php else : ?>
 <?=$tab->renderForm()?>
 <?php endif; ?>

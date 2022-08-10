@@ -24,5 +24,5 @@ $dlg->addField(GDT_DIV::make($field->name.'_canvas')->addClass('maps-canvas'));
 $dlg->okButton();
 $dlg->cancelButton();
 $dlg->attr('gdo-on-close', "GDO.Maps.closeDialog('".$dlg->name."_picker', '".$field->id()."')");
-echo $dlg->renderCell();
+echo $dlg->renderHTML();
 ?>

@@ -8,7 +8,7 @@ use GDO\UI\GDT_Icon;
   </button>
   <div class="dropdown-menu">
 <?php foreach ($field->getFields() as $gdt) : ?>
-	<?=$gdt->renderCell()?>
+	<?=$gdt->renderHTML()?>
 <?php endforeach; ?>
   </div>
 </div>

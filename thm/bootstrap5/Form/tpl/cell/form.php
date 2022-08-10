@@ -41,7 +41,7 @@ $firstEditableField = null;
 
 <?php if ($form->hasActions()) : ?>
 	<div class="gdt-form-actions">
-      <?=$form->actions()->renderCell()?>
+      <?=$form->actions()->renderHTML()?>
 	</div>
 <?php endif; ?>
 

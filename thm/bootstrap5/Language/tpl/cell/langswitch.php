@@ -7,7 +7,7 @@ $languages = Module_Language::instance()->cfgSupported();
 ?>
 <div class="dropdown">
   <button class="btn btn-default dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    <?=GDO_Language::current()->renderCell()?>
+    <?=GDO_Language::current()->renderHTML()?>
     <?=GDO_Language::current()->renderName()?>
     <span class="caret"></span>
   </button>

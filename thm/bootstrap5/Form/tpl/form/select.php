@@ -21,10 +21,10 @@
     <?php endif; ?>
 	<?php foreach ($field->choices as $value => $choice) : ?>
 	  <option
-	   data-content='<?=$field->renderChoice($choice)?>'
+	   data-content='<?=$field->renderOption($choice)?>'
        <?=$field->htmlSelected($value)?>	   
 	   value="<?= htmlspecialchars($value); ?>">
-		<?= $field->renderChoice($choice); ?>
+		<?= $field->renderOption($choice); ?>
 	  </option>
 	<?php endforeach; ?>
   </select>

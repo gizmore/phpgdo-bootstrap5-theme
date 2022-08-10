@@ -49,7 +49,7 @@ $result = $field->getResult();
 	  <?php foreach($headers as $gdt) :
 	  if (!$gdt->hidden) : 
 	  ?>
-		<td class="<?=$gdt->htmlClass()?>"><?=$gdt->gdo($gdo)->renderCell()?></td>
+		<td class="<?=$gdt->htmlClass()?>"><?=$gdt->gdo($gdo)->renderHTML()?></td>
 	  <?php endif; ?>
 	  <?php endforeach; ?>
 	</tr>
@@ -60,7 +60,7 @@ $result = $field->getResult();
 	  <?php foreach($headers as $gdt) :
 	  if (!$gdt->hidden) : 
 	  ?>
-		<td class="<?=$gdt->htmlClass()?>"><?=$gdt->gdo($gdo)->renderCell()?></td>
+		<td class="<?=$gdt->htmlClass()?>"><?=$gdt->gdo($gdo)->renderHTML()?></td>
 	  <?php endif; ?>
 	  <?php endforeach; ?>
 	</tr>

@@ -13,7 +13,7 @@ $field->addClass('gdt-panel')->addClass('card');
     <div class="card-text">
   <?=$field->renderText()?>
 <?php foreach($field->fields as $field) : ?>
-      <?=$field->renderCell()?>
+      <?=$field->renderHTML()?>
 <?php endforeach;?>
     </div>
   </div>

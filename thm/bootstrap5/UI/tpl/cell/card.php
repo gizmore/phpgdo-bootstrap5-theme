@@ -11,15 +11,15 @@ $field->addClass('gdt-card card w-100');
 <?php if ($field->avatar || $field->title || $field->subtitle) : ?>
   <div class="gdt-card-upper card-header">
 <?php if ($field->avatar) : ?>
-    <div class="gdt-card-avatar"><?=$field->avatar->renderCell()?></div>
+    <div class="gdt-card-avatar"><?=$field->avatar->renderHTML()?></div>
 <?php endif; ?>
 <?php if ($field->title || $field->subtitle) : ?>
     <div class="gdt-card-title-texts">
 <?php if ($field->title) : ?>
-      <h3 class="gdt-card-title card-title"><?=$field->title->renderCell()?></h3>
+      <h3 class="gdt-card-title card-title"><?=$field->title->renderHTML()?></h3>
 <?php endif; ?>
 <?php if ($field->subtitle) : ?>
-      <div class="gdt-card-subtitle card-subtitle"><?=$field->subtitle->renderCell()?></div>
+      <div class="gdt-card-subtitle card-subtitle"><?=$field->subtitle->renderHTML()?></div>
 <?php endif; ?>
   </div>
 <?php endif; ?>
@@ -29,10 +29,10 @@ $field->addClass('gdt-card card w-100');
 <?php if ($field->image || $field->content || $field->fields) : ?>
   <div class="gdt-card-middle card-body">
 <?php if ($field->image) : ?>
-    <div class="gdt-card-image "><?=$field->image->renderCell()?></div>
+    <div class="gdt-card-image "><?=$field->image->renderHTML()?></div>
 <?php endif; ?>
 <?php if ($field->content) : ?>
-    <div class="gdt-card-content card-text"><?=$field->content->renderCell()?></div>
+    <div class="gdt-card-content card-text"><?=$field->content->renderHTML()?></div>
 <?php endif; ?>
 <?php if ($field->fields) : ?>
     <div class="gdt-card-fields">
@@ -49,10 +49,10 @@ $field->addClass('gdt-card card w-100');
 <?php if ($field->footer || $field->actions) : ?>
   <div class="gdt-card-lower card-footer">
 <?php if ($field->footer) : ?>
-    <div class="gdt-card-footer text-muted"><?=$field->footer->renderCell()?></div>
+    <div class="gdt-card-footer text-muted"><?=$field->footer->renderHTML()?></div>
 <?php endif; ?>
 <?php if ($field->actions) : ?>
-    <div class="gdt-card-actions"><?=$field->actions()->renderCell()?></div>
+    <div class="gdt-card-actions"><?=$field->actions()->renderHTML()?></div>
 <?php endif; ?>
   </div>
 <?php endif; ?>

@@ -9,7 +9,7 @@ use GDO\UI\GDT_Tab;
 <?php
 foreach ($field->getFields() as $gdt)
 {
-	echo $cell ? $gdt->renderCell() : $gdt->renderForm();
+	echo $cell ? $gdt->renderHTML() : $gdt->renderForm();
 }
 ?>
   </div>
