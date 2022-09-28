@@ -30,7 +30,7 @@ $firstEditableField = null;
     <div class="gdt-form-inner">
 <?php endif; ?>
 <?php foreach ($form->getFields() as $field) : ?>
-     <?php if ( ($form->autofocus) && ($field->editable) && ($field->getVar() === null) && ($field->focusable) && (!$field instanceof GDT_File) ) $firstEditableField = $firstEditableField ? $firstEditableField : $field; ?>
+     <?php if ( ($form->autofocus) && ($field->writeable) && ($field->getVar() === null) && ($field->focusable) && (!$field instanceof GDT_File) ) $firstEditableField = $firstEditableField ? $firstEditableField : $field; ?>
       <?php $field->gdo($form->gdo)->var($field->getRequestVar($form->name, $field->var)); ?>
       <?=$field->renderForm()?>
 <?php endforeach; ?>
