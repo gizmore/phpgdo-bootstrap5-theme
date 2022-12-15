@@ -96,4 +96,35 @@ $(function(){
 		format: conv(GDO_TRANS.t('df_day')),
 	});
 	
+	// Clickarea enlarger for submits.
+	$('.gdt-submit').click(function(e){
+		if(e.target.nodeName === 'INPUT') {
+        	e.stopPropagation();
+	        return;
+		}
+		$(this).find('input').click();
+		return false;
+	});
+
+	window.GDO.error = function(html, title) {
+		var dialog = $('\
+<div class="modal" tabindex="-1">\
+  <div class="modal-dialog">\
+    <div class="modal-content">\
+      <div class="modal-header">\
+        <h5 class="modal-title">'+title+'</h5>\
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>\
+      </div>\
+      <div class="modal-body">\
+        <p>'+html+'</p>\
+      </div>\
+    </div>\
+  </div>\
+</div>');
+		$('body').append(dialog);
+		const options = {
+		};
+		const m = new bootstrap.Modal('.gdo-modal', options);
+	};
+
 });

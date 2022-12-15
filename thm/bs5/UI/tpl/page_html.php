@@ -1,5 +1,5 @@
 <?php
-namespace GDO\Bootstrap5Theme\thm\bs5\UI;
+namespace GDO\Bootstrap5Theme\thm\bs5\UI\tpl;
 use GDO\Core\Website;
 use GDO\Core\Javascript;
 use GDO\UI\GDT_Page;
@@ -10,8 +10,8 @@ use GDO\Language\Trans;
 <!DOCTYPE html>
 <html class="nojs" lang="<?=Trans::$ISO?>">
     <head>
-     	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+     	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
 		<title><?=$page->renderTitle()?></title>
 		<?=Website::displayHead()?>
 		<?=Website::displayMeta()?>
@@ -32,7 +32,7 @@ use GDO\Language\Trans;
                 <!-- Top navigation-->
                 <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
                     <div class="container-fluid">
-                        <button class="btn btn-primary" id="sidebarToggle">Toggle Menu</button>
+                        <button class="btn btn-primary" id="sidebarToggle"><span class="navbar-toggler-icon"></span></button>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
@@ -44,10 +44,9 @@ use GDO\Language\Trans;
                     </div>
                 </nav>
                 <!-- topTabs -->
-                <?=$page->topTabs->renderHTML()?>
                 <!-- Page content-->
                 <div id="content-wrap" class="container-fluid">
-                    <?=$page->topBar()->renderHTML()?>
+                    <?=$page->topResponse()->renderHTML()?>
                     <?=$page->html?>
                 </div>
             </div>

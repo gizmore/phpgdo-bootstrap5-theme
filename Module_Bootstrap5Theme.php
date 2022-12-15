@@ -7,9 +7,10 @@ use GDO\Core\Application;
 
 /**
  * Combine a few Bootstrap5 plugins into a usable GDOv7 Theme.
+ * The plugins are all Apache2 compatible.
  * 
  * @author gizmore
- * @version 7.0.0
+ * @version 7.0.1
  * @since 6.10.4
  */
 final class Module_Bootstrap5Theme extends GDO_Module
@@ -22,6 +23,7 @@ final class Module_Bootstrap5Theme extends GDO_Module
     {
         return [
             'Bootstrap5',
+        	'Moment',
         ];
     }
     
@@ -30,7 +32,6 @@ final class Module_Bootstrap5Theme extends GDO_Module
     	return [
         	'FontAwesome',
         	'JQueryAutocomplete',
-        	'Moment',
     	];
     }
     
@@ -49,8 +50,8 @@ final class Module_Bootstrap5Theme extends GDO_Module
     {
     	if (Application::$INSTANCE->hasTheme('bs5'))
     	{
-	        $this->addCSS('css/gdo6-bootstrap5.css');
-	        $this->addJS('js/gdo6-bootstrap5.js');
+	        $this->addCSS('css/gdo7-bootstrap5.css');
+	        $this->addJS('js/gdo7-bootstrap5.js');
 	        $this->addJS('bootstrap-datepicker/js/bootstrap-datepicker.js');
 	        switch (Trans::$ISO)
 	        {
