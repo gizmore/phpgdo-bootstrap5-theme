@@ -1,5 +1,5 @@
 <?php
-namespace GDO\UI\tpl;
+namespace GDO\Bootstrap5Theme\thm\bs5\UI\tpl;
 use GDO\Core\Javascript;
 use GDO\Core\Website;
 use GDO\Core\Module_Core;
