@@ -162,8 +162,8 @@ a.dropdown-item:hover { cursor: pointer; }
 .gdo-table-caption { background: #eee; padding: 8px 8px 2px; border-top-left-radius: 8px; border-top-right-radius: 8px; }
 .gdo-table-caption h3 { margin: 0; }
 .gdt-table .gdo-country img { height: 24px; }
-
-
+.gdt-table .gdt-link a,
+.gdt-table .gdt-button a { padding-top: 0; min-height: auto; }
 
 ul, ol { margin: 0; padding: 0; }
 .gdt-list .list-group > div { padding: 1rem; border-bottom: 1px solid #ccc; }
