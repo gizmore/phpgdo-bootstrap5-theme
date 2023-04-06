@@ -55,7 +55,7 @@ use GDO\UI\GDT_Page;
         <!-- Page content-->
         <div id="content-wrap" class="container-fluid">
 			<?=$page->topResponse()->renderHTML()?>
-			<?=$page->html?>
+			<?=$page->html?$page->html:''?>
         </div>
     </div>
 </div>
