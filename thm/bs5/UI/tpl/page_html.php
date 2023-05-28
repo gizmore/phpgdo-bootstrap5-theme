@@ -41,7 +41,8 @@ use GDO\UI\GDT_Page;
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+					<?=$page->topBar()->renderHTML()?>
+					<ul class="navbar-nav ms-auto mt-2 mt-lg-0">
 						<?php
 						foreach ($page->rightBar()->getFields() as $gdt) : ?>
                             <li class="nav-item"><span class="nav-link"><?=$gdt->renderHTML()?></span></li>
@@ -54,8 +55,9 @@ use GDO\UI\GDT_Page;
         <!-- topTabs -->
         <!-- Page content-->
         <div id="content-wrap" class="container-fluid">
+
 			<?=$page->topResponse()->renderHTML()?>
-			<?=$page->html?$page->html:''?>
+			<?=$page->html?:''?>
         </div>
     </div>
 </div>
