@@ -16,10 +16,10 @@
     padding: 4px 8px;
 }
 
-#leftnav input,
-#leftnav .gdo-captcha-img {
-    width: 13rem;
-}
+/*#leftnav input,*/
+/*#leftnav .gdo-captcha-img {*/
+/*    !*width: 13rem;*!*/
+/*}*/
 
 /** Footer **/
 footer,
