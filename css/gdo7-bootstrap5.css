@@ -410,3 +410,8 @@ ul, ol {
 .unread {
     background: gold;
 }
+
+.gdt-like-button.liked span,
+.gdt-dislike-button.liked span {
+    color: gold;
+}
