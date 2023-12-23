@@ -108,7 +108,7 @@ $(function(){
 
 	window.GDO.error = function(html, title) {
 		var dialog = $('\
-<div class="modal" tabindex="-1">\
+<div id="gdo-modal-error" class="modal" tabindex="-1">\
   <div class="modal-dialog">\
     <div class="modal-content">\
       <div class="modal-header">\
@@ -124,7 +124,7 @@ $(function(){
 		$('body').append(dialog);
 		const options = {
 		};
-		const m = new bootstrap.Modal('.gdo-modal', options);
+		const m = new bootstrap.Modal('#gdo-modal-error', options);
 	};
 
 });
