@@ -108,7 +108,7 @@ $(function(){
 
 	window.GDO.error = function(html, title) {
 		var dialog = $('\
-<div id="gdo-modal-error" class="modal" tabindex="-1">\
+<div class="modal gdo-modal-error" style="background: transparent; box-shadow: none; max-width: 100%;" tabindex="-1">\
   <div class="modal-dialog">\
     <div class="modal-content">\
       <div class="modal-header">\
@@ -124,7 +124,11 @@ $(function(){
 		$('body').append(dialog);
 		const options = {
 		};
-		const m = new bootstrap.Modal('#gdo-modal-error', options);
+		const m = new bootstrap.Modal('.gdo-modal-error', options);
+		dialog.on('hidden.bs.modal', function (event) {
+			dialog.remove();
+		});
+		m.show();
 	};
 
 });
