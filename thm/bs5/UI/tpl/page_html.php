@@ -37,11 +37,11 @@ use GDO\UI\GDT_Page;
         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
             <div class="container-fluid">
                 <button class="btn btn-primary" id="sidebarToggle"><span class="navbar-toggler-icon"></span></button>
+                <div class="navbar-brand"><?=$page->topBar()->renderHTML()?></div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<?=$page->topBar()->renderHTML()?>
 					<ul class="navbar-nav ms-auto mt-2 mt-lg-0">
 						<?php
 						foreach ($page->rightBar()->getFields() as $gdt) : ?>
