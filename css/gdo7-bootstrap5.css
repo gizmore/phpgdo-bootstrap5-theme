@@ -13,7 +13,7 @@
 
 .list-group-item .gdt-link a {
     width: 100%;
-    padding: 4px 8px;
+    padding: 8px 8px;
 }
 
 /*#leftnav input,*/
@@ -414,4 +414,8 @@ ul, ol {
 .gdt-like-button.liked span,
 .gdt-dislike-button.liked span {
     color: gold;
+}
+
+.nav-link .gdt-link {
+    width: 100%;
 }
