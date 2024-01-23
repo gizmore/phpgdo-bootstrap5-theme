@@ -5,7 +5,7 @@ use GDO\Core\GDT;
 use GDO\Table\GDT_ListItem;
 
 /** @var $gdt GDT_ListItem * */
-$gdt->addClass('gdt-list-item');
+$gdt->addClass('gdt-list-item list-group-item');
 ?>
 <!-- BEGIN LIST ITEM -->
 <div

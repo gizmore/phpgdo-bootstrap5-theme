@@ -90,8 +90,7 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 
 #content-wrap > h1,
 #content-wrap > h2,
-#content-wrap > h3,
-.gdt-headline {
+#content-wrap > h3 {
     background: cornsilk;
     margin: 0px -12px 16px;
     padding: 8px;
@@ -419,3 +418,16 @@ ul, ol {
 .nav-link .gdt-link {
     width: 100%;
 }
+
+.gdt-li-avatar {
+    float: left;
+}
+
+.gdt-li-title-texts {
+    overflow: auto;
+}
+
+.gdt-li-main {
+    clear: both;
+}
+
