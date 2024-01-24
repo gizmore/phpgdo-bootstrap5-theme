@@ -431,3 +431,7 @@ ul, ol {
     clear: both;
 }
 
+.gdt-list-title {
+    padding: 16px 0 12px 8px;
+    margin: 0;
+}

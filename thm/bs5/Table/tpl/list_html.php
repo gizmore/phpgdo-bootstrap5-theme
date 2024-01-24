@@ -48,7 +48,7 @@ echo $pagemenu;
 		endif; ?>
 		<?php
 		if ($field->hasTitle()) : ?>
-            <div class="gdt-list-title"><h3><?=$field->renderTitle()?></h3></div>
+            <h5 class="gdt-list-title"><?=$field->renderTitle()?></h5>aaa
 		<?php
 		endif; ?>
 		<?php
