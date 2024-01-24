@@ -210,7 +210,12 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
 
 .gdt-submit .gdo-icon,
 .gdt-link .gdo-icon {
+    top: 1px;
     padding-right: 6px;
+}
+
+.gdt-submit .gdo-icon {
+    top: 7px;
 }
 
 .gdt-submit {
