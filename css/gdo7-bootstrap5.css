@@ -440,3 +440,7 @@ ul, ol {
     padding: 16px 0 12px 8px;
     margin: 0;
 }
+
+.gdt-editor-text textarea {
+    width: 100%;
+}

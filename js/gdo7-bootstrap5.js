@@ -126,6 +126,7 @@ $(function(){
 		};
 		const m = new bootstrap.Modal('.gdo-modal-error', options);
 		dialog.on('hidden.bs.modal', function (event) {
+			$('.modal-backdrop').remove();
 			dialog.remove();
 		});
 		m.show();
