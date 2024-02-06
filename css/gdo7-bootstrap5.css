@@ -338,6 +338,7 @@ a.dropdown-item:hover {
 
 .gdt-card-middle {
     padding: 12px;
+    display: flex;
 }
 
 .gdt-card-divider,

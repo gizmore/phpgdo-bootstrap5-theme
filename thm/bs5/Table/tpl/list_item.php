@@ -17,8 +17,7 @@ $gdt->addClass('gdt-list-item list-group-item');
 			<?php
 			if ($gdt->hasAvatar()) : ?>
                 <div class="gdt-li-avatar"><?=$gdt->renderAvatar()?></div>
-			<?php
-			endif; ?>
+			<?php endif; ?>
 			<?php
 			if ($gdt->hasTitle() || $gdt->hasSubTitle()) : ?>
                 <div class="gdt-li-title-texts">
@@ -35,6 +34,9 @@ $gdt->addClass('gdt-list-item list-group-item');
                 </div>
 			<?php
 			endif; ?>
+            <?php if ($gdt->hasDate()): ?>
+                <div class="gdt-li-date"><?=$gdt->renderDate()?></div>
+            <?php endif; ?>
         </div>
 	<?php
 	endif; ?>

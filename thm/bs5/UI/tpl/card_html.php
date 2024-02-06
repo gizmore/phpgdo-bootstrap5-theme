@@ -47,12 +47,12 @@ $field->addClass('card');
         <div class="gdt-card-middle">
 			<?php
 			if (isset($field->image)) : ?>
-                <div class="gdt-card-image"><?=$field->image->renderHTML()?></div>
+                <div class="gdt-card-image"><?=$field->image->renderCard()?></div>
 			<?php
 			endif; ?>
 			<?php
 			if (isset($field->content)) : ?>
-                <div class="card-body"><?=$field->content->renderHTML()?></div>
+                <div class="card-body"><?=$field->content->renderCard()?></div>
 			<?php
 			endif; ?>
 			<?php
