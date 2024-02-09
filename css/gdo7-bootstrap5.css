@@ -444,4 +444,11 @@ ul, ol {
 
 .gdt-editor-text textarea {
     width: 100%;
+    padding: 6px;
+}
+
+.gdt-form-error {
+    padding: 4px;
+    background: var(--bs-alert-bg);
+    border-radius: 4px;
 }
