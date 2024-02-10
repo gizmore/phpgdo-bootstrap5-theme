@@ -79,7 +79,7 @@ $gdt->addClass('gdt-list-item list-group-item');
         <div class="gdt-li-lower">
 			<?php
 			if ($gdt->hasFooter()) : ?>
-                <div class="gdt-li-footer"><?=$gdt->footer->render()?></div>
+                <div class="gdt-li-footer"><?=$gdt->footerGDT->render()?></div>
 			<?php
 			endif; ?>
 			<?php
