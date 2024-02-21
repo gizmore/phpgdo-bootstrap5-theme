@@ -452,3 +452,7 @@ ul, ol {
     background: var(--bs-alert-bg);
     border-radius: 4px;
 }
+
+.gdo-lang-switch {
+    padding: 0 8px;
+}
