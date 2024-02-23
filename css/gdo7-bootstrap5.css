@@ -456,3 +456,7 @@ ul, ol {
 .gdo-lang-switch {
     padding: 0 8px;
 }
+
+#gdt-loading.done {
+    display: none;
+}
