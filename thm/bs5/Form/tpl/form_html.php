@@ -5,7 +5,11 @@ use GDO\Form\GDT_Form;
 use GDO\UI\GDT_Error;
 
 /** @var GDT_Form $field * */
-$field->addClass('card')
+$field->addClass('card');
+if ($field->focus)
+{
+    $field->addClass('focusable');
+}
 ?>
 <?php
 if ($field->hasError()) : ?>
