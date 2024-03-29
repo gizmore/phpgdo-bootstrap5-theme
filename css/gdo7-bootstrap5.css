@@ -449,7 +449,7 @@ ul, ol {
 
 .gdt-form-error {
     padding: 4px;
-    background: var(--bs-alert-bg);
+    background: #f5c2c7;
     border-radius: 4px;
 }
 
