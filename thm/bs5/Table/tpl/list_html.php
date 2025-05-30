@@ -7,6 +7,8 @@ use GDO\Table\GDT_List;
 
 /** @var $field GDT_List * */
 
+global $me;
+
 echo GDT_Template::php('Table', 'list_filter.php', ['field' => $field]);
 
 ###################
@@ -54,7 +56,7 @@ echo $pagemenu;
 		<?php
 		$gdo = $field->fetchAs->cache->getDummy();
 		while ($gdo = $result->fetchInto($gdo)) :
-			echo $gdo->renderList();
+			echo $me->renderList($gdo);
 		endwhile;
 		?>
     </div>
