@@ -1,7 +1,6 @@
 <?php
 namespace GDO\Bootstrap5Theme;
 
-use GDO\Core\Application;
 use GDO\Core\GDO_Module;
 use GDO\Language\Trans;
 
@@ -9,7 +8,7 @@ use GDO\Language\Trans;
  * Combine a few Bootstrap5 plugins into a usable GDOv7 Theme.
  * The plugins are all Apache2 compatible.
  *
- * @version 7.0.1
+ * @version 7.1.0
  * @since 6.10.4
  * @author gizmore
  */

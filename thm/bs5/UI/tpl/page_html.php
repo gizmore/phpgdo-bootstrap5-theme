@@ -19,10 +19,10 @@ use GDO\UI\GDT_Page;
 	<?=Website::displayMeta()?>
 	<?=Website::displayLink()?>
 </head>
-<body>
+<body class="nojs">
 <div class="d-flex" id="wrapper">
     <!-- Sidebar-->
-    <div class="border-end bg-white" id="sidebar-wrapper">
+    <aside class="border-end bg-body-tertiary" id="sidebar-wrapper" aria-label="<?=t('menu')?>">
         <ul id="leftnav" class="list-group list-group-flush">
 			<?php
 			foreach ($page->leftBar()->getFields() as $gdt) : ?>
@@ -30,13 +30,13 @@ use GDO\UI\GDT_Page;
 			<?php
 			endforeach; ?>
         </ul>
-    </div>
+    </aside>
     <!-- Page content wrapper-->
     <div id="page-content-wrapper">
         <!-- Top navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
             <div class="container-fluid">
-                <button class="btn btn-primary" id="sidebarToggle"><span class="navbar-toggler-icon" aria-label="<?=t('toggle_sidebar')?>"></span></button>
+                <button class="btn btn-primary" id="sidebarToggle" type="button" aria-controls="sidebar-wrapper" aria-label="<?=t('toggle_sidebar')?>"><span class="navbar-toggler-icon" aria-hidden="true"></span></button>
                 <div class="navbar-brand"><?=$page->topBar()->renderHTML()?></div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
@@ -54,11 +54,11 @@ use GDO\UI\GDT_Page;
         </nav>
         <!-- topTabs -->
         <!-- Page content-->
-        <div id="content-wrap" class="container-fluid">
+        <main id="content-wrap" class="container-fluid" tabindex="-1">
 
 			<?=$page->topResponse()->renderHTML()?>
 			<?=$page->html?:''?>
-        </div>
+        </main>
     </div>
 </div>
 <footer><?=$page->bottomBar()->addClass('gdt-footer')->renderHTML()?></footer>

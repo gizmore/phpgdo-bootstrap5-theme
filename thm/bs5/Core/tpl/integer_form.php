@@ -25,7 +25,6 @@ use GDO\Core\GDT_Int;
 			<?=$field->htmlName()?>
 			<?=$field->htmlDisabled()?>
 			<?=$field->htmlRequired()?>
-			<?=$field->htmlFocus()?>
 			<?=$field->htmlValue()?>>
     </div>
 	<?=$field->htmlError()?>

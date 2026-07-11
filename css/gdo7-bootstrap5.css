@@ -460,3 +460,160 @@ ul, ol {
 #gdt-loading.done {
     display: none;
 }
+/* Bootstrap 5 theme refinements */
+:root {
+    --gdo-sidebar-width: 15rem;
+    --gdo-content-gap: 1rem;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+}
+
+#sidebar-wrapper {
+    width: var(--gdo-sidebar-width);
+    flex: 0 0 var(--gdo-sidebar-width);
+}
+
+#content-wrap {
+    width: 100%;
+    padding-top: var(--gdo-content-gap);
+    padding-bottom: var(--gdo-content-gap);
+}
+
+#leftnav .list-group-item:focus-within,
+#leftnav .list-group-item:hover {
+    background-color: var(--bs-tertiary-bg);
+}
+
+#leftnav a:focus-visible,
+.nav-link:focus-visible,
+.btn:focus-visible,
+.form-control:focus-visible,
+.form-select:focus-visible {
+    outline: 2px solid var(--bs-primary);
+    outline-offset: 2px;
+}
+
+.gdt-container {
+    margin-bottom: 1rem;
+}
+
+.gdt-container > .form-label {
+    display: block;
+    margin-bottom: .375rem;
+    font-weight: 600;
+}
+
+.gdt-container.gdt-error .form-control,
+.gdt-container.gdt-error .form-select,
+.gdt-container.error .form-control,
+.gdt-container.error .form-select {
+    border-color: var(--bs-danger);
+}
+
+.gdt-form form {
+    overflow: hidden;
+    border-color: var(--bs-border-color);
+    background-color: var(--bs-body-bg);
+}
+
+.gdt-form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    align-items: center;
+}
+
+.gdt-submit {
+    cursor: pointer;
+}
+
+.gdt-submit:has(input:disabled),
+.gdt-submit:has(button:disabled) {
+    cursor: not-allowed;
+    opacity: .65;
+}
+
+.gdt-submit input:focus-visible {
+    outline: none;
+}
+
+.gdt-table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.gdt-table table {
+    width: 100%;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.gdt-table tbody tr:focus-within {
+    background-color: var(--bs-tertiary-bg);
+}
+
+.gdt-card-actions,
+.gdt-card-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.card-avatar img,
+.gdt-li-avatar img {
+    max-width: 100%;
+    height: auto;
+}
+
+.gdo-modal-error .modal-body {
+    overflow-wrap: anywhere;
+}
+
+.gdo-modal-error pre {
+    max-height: 55vh;
+    overflow: auto;
+    white-space: pre-wrap;
+}
+
+#gdt-loading,
+#gdt-loading-pane {
+    z-index: 1090;
+}
+
+@media (max-width: 767.98px) {
+    #sidebar-wrapper {
+        position: fixed;
+        inset: 0 auto 0 0;
+        z-index: 1040;
+        overflow-y: auto;
+        box-shadow: var(--bs-box-shadow);
+    }
+
+    body:not(.sb-sidenav-toggled) #sidebar-wrapper {
+        visibility: hidden;
+    }
+
+    body.sb-sidenav-toggled {
+        overflow: hidden;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #sidebar-wrapper,
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}
