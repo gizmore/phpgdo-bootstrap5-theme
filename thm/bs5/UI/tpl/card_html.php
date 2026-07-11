@@ -26,7 +26,7 @@ $field->addClass('card');
                 <div class="gdt-card-title-texts">
 					<?php
 					if ($field->hasTitle()) : ?>
-                        <h5 class="card-title"><?=$field->renderTitle()?></h5>
+                        <div class="card-title"><?=$field->renderTitle()?></div>
 					<?php
 					endif; ?>
 					<?php
