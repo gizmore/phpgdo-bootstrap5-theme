@@ -21,7 +21,7 @@ use GDO\Core\GDT_Int;
 			<?=$field->htmlConfig()?>
                 min="<?=$field->min?>"
                 max="<?=$field->max?>"
-                step="<?=$field->step?>"
+                <?=$field->htmlStep()?>
 			<?=$field->htmlName()?>
 			<?=$field->htmlDisabled()?>
 			<?=$field->htmlRequired()?>
