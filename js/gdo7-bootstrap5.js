@@ -124,6 +124,8 @@
 
     const installErrorDialog = ($) => {
         window.GDO.error = (html, title = 'Error') => {
+            debugger;
+            
             if (!window.bootstrap?.Modal) {
                 window.alert($('<div>').html(html).text());
                 return;
@@ -158,9 +160,9 @@
 
     if (window.jQuery) {
         jQuery(($) => {
+            installErrorDialog($);
             initDateInputs($);
             initSubmitClickAreas($);
-            installErrorDialog($);
         });
     }
 })();
