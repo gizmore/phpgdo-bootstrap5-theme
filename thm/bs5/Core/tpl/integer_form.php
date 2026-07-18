@@ -17,7 +17,7 @@ use GDO\Core\GDT_Int;
                 class="form-control"
 			<?=$field->htmlFocus()?>
 			<?=$field->htmlID()?>
-                type="number"
+                type="<?=$field->getInputType()?>>"
 			<?=$field->htmlConfig()?>
                 min="<?=$field->min?>"
                 max="<?=$field->max?>"

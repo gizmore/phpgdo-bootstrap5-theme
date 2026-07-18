@@ -124,8 +124,8 @@
 
     const installErrorDialog = ($) => {
         window.GDO.error = (html, title = 'Error') => {
-            debugger;
-            
+            console.error(title, html);
+
             if (!window.bootstrap?.Modal) {
                 window.alert($('<div>').html(html).text());
                 return;

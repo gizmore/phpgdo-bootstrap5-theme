@@ -41,10 +41,10 @@ endif; ?>
 					<?php
 					foreach ($field->getFields() as $gdt)
 					{
-						if (isset($field->gdo))
-						{
-							$gdt->gdo($field->gdo);
-						}
+//						if (isset($field->gdo))
+//						{
+//							$gdt->gdo($field->gdo);
+//						}
 						echo $gdt->renderForm();
 					} ?></div>
 			<?php
