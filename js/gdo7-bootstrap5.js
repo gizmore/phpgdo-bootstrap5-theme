@@ -78,9 +78,8 @@
 
     const initDateInputs = ($) => {
         const language = window.GDO_LANGUAGE || 'en';
-        const translate = window.GDO_TRANS?.t;
-        const dayFormat = convertPhpDateFormat(translate ? translate('df_day') : 'Y-m-d');
-        const dateTimeFormat = convertPhpDateFormat(translate ? translate('df_short') : 'Y-m-d H:i');
+        const dayFormat = convertPhpDateFormat(t('df_day'));
+        const dateTimeFormat = convertPhpDateFormat(t('df_short'));
 
         if ($.fn.datepicker) {
             $('.gdt-date input, .gdt-birthdate input').each(function () {
@@ -125,6 +124,8 @@
     const installErrorDialog = ($) => {
         window.GDO.error = (html, title = 'Error') => {
             console.error(title, html);
+            console.log(console.trace());
+            debugger;
 
             if (!window.bootstrap?.Modal) {
                 window.alert($('<div>').html(html).text());
