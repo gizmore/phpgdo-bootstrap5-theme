@@ -155,7 +155,7 @@
                 modal.dispose();
                 dialog.remove();
             });
-            modal.show();
+            return modal.show();
         };
     };
 
