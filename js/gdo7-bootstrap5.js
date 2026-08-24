@@ -1,6 +1,4 @@
-"use strict";
-
-(() => {
+$(function() {
     const storageKey = 'gdo|bs5|sidebar-collapsed';
 
     const setSidebarState = (collapsed) => {
@@ -76,7 +74,7 @@
         });
     };
 
-    const initDateInputs = ($) => {
+    const initDateInputs = () => {
         const language = window.GDO_LANGUAGE || 'en';
         const dayFormat = convertPhpDateFormat(t('df_day'));
         const dateTimeFormat = convertPhpDateFormat(t('df_short'));
@@ -125,7 +123,6 @@
         window.GDO.error = (html, title = 'Error') => {
             console.error(title, html);
             console.log(console.trace());
-            debugger;
 
             if (!window.bootstrap?.Modal) {
                 window.alert($('<div>').html(html).text());
@@ -159,11 +156,7 @@
         };
     };
 
-    if (window.jQuery) {
-        jQuery(($) => {
-            installErrorDialog($);
-            initDateInputs($);
-            initSubmitClickAreas($);
-        });
-    }
-})();
+    installErrorDialog();
+    initDateInputs();
+    initSubmitClickAreas();
+});
