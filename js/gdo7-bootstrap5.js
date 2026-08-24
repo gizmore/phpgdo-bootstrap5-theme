@@ -39,12 +39,13 @@ $(function() {
         });
     };
 
-    window.addEventListener('DOMContentLoaded', () => {
-        document.documentElement.classList.remove('nojs');
-        document.body.classList.remove('nojs', 'n');
-        initSidebar();
-        initBootstrapTooltips();
-    });
+    // We are already inside jQuery's DOM-ready callback. Registering another
+    // DOMContentLoaded listener here is too late and leaves the sidebar button
+    // without its click handler.
+    document.documentElement.classList.remove('nojs');
+    document.body.classList.remove('nojs', 'n');
+    initSidebar();
+    initBootstrapTooltips();
 
     window.GDO = window.GDO || {};
     window.GDO.Language = window.GDO.Language || {};
