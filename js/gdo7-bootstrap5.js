@@ -157,7 +157,7 @@ $(function() {
         };
     };
 
-    installErrorDialog();
-    initDateInputs();
-    initSubmitClickAreas();
+    installErrorDialog($);
+    initDateInputs($);
+    initSubmitClickAreas($);
 });
