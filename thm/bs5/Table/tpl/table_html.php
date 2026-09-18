@@ -13,8 +13,8 @@ $result = $field->getResult();
 <?=$pm?>
 <div class="gdt-table"<?=$field->htmlID()?>>
 	<?php
-	if (!$form) : ?>
-    <form method="post"<?=$field->htmlAction()?>>
+if (!$form) : ?>
+    <form method="get"<?=$field->htmlAction()?>>
 		<?
 		#GDT_Form::htmlHiddenMoMe()?>
 		<?php
