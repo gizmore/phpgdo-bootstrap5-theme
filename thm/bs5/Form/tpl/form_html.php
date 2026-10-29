@@ -17,7 +17,7 @@ if ($field->hasError()) : ?>
 <?php
 endif; ?>
 <div<?=$field->htmlID()?><?=$field->htmlAttributes()?>>
-    <form<?=$field->htmlVerb()?><?=$field->htmlAction()?><?=$field->htmlTarget()?>>
+    <form<?=$field->htmlVerb()?><?=$field->htmlAction()?><?=$field->htmlTarget()?><?=$field->htmlEnctype()?>>
 		<?php
 		if ($field->hasTitle() || $field->hasText()) : ?>
             <div class="gdt-form-text card-header">
